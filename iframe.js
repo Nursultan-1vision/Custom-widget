@@ -106,6 +106,7 @@ class ovIframe {
         this._iframe = document.createElement("iframe");
         this._iframe.src = url;
         this._iframe.id = "vision-widget__content";
+        this._iframe.style.height = '100%';
         this._iframe.onload = () => {
             setTimeout(() => {
                 this._loader.style.display = 'none';
