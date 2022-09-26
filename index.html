@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<div class="vision-widget"> 
+  <div class="vision-widget__loader">
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  </div>
+  <div class="vision-widget__modal">
+    <div class="vision-widget__close">
+      <img src="./close.svg" alt="">
+    </div>
+    <div class="vision-widget__content">
+      <form class="form" action="">
+        <div class="header-component">
+          <div class="header-component__logo">
+            <img src="./1visionLogo.svg" alt="">
+          </div>
+          <div class="header-component__cost">
+            <span>Оплата товаров в example.com</span>
+            <span>100.00 KZT</span>
+          </div>
+        </div>
+        <div class="form__card">
+          <div class="text-field">
+            <label for="">Номер карты</label>
+            <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+          </div>
+          <div class="form__card-wrap">
+            <div class="text-field">
+              <label for="">СРОК ДЕЙСТВИЯ</label>
+              <input type="text" placeholder="MM/YY">
+            </div>
+            <div class="text-field">
+              <label for="">CVV/CVC</label>
+              <input type="text" placeholder="XXX">
+            </div>
+          </div>
+          <div class="text-field">
+            <label for="">ИМЯ ВЛАДЕЛЬЦА КАРТЫ</label>
+            <input type="text" placeholder="EXAMPLE EXAMPLE">
+          </div>
+          <button class="button-submit" type="submit">
+            Оплатить
+            <span>100.00 KZT</span>
+          </button>
+        </div>
+        <div class="footer-component">
+          <div class="footer-component__icons">
+            <img src="./Icons/1.png" alt="">
+            <img src="./Icons/2.png" alt="">
+            <img src="./Icons/3.png" alt="">
+            <img src="./Icons/4.svg" alt="">
+            <img src="./Icons/5.svg" alt="">
+          </div>
+          <div class="footer-component__text">
+            Безопасная оплата кредитной картой. Защищено сертификатом SSL.
+            Нажимаю на кнопку, вы принимаете условия <a target="_blank" href="https://onevision.kz/rules.pdf">Оферты</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="./iframe.js"></script>  
+</body>
+</html>

@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+.vision-widget {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(9 9 22 / 80%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vision-widget * {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+.vision-widget__modal {
+  background: white;
+  min-height: 300px;
+  max-height: 90vh;
+  overflow-y: scroll;
+  max-width: 460px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 38px 38px 30px 38px;
+  position: relative;
+}
+.vision-widget__modal::-webkit-scrollbar {
+  width: 0;
+}
+.vision-widget__modal::-webkit-scrollbar {
+  width: 0;
+}
+.vision-widget__close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  cursor: pointer;
+}
+.vision-widget__close img {
+  width: 40px;
+  cursor: pointer;
+}
+.vision-widget__content .header-component__logo {
+  display: flex;
+  justify-content: center;
+}
+.vision-widget__content .header-component__logo img {
+  width: 120px;
+}
+.vision-widget__content .header-component__cost {
+  margin-top: 20px;
+  text-align: center;
+  color: #293041 !important;
+}
+.vision-widget__content .header-component__cost span {
+  display: block;
+}
+.vision-widget__content .header-component__cost span:first-child {
+  font-size: 18px;
+  font-weight: 400;
+}
+.vision-widget__content .header-component__cost span:last-child {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 23px;
+}
+.vision-widget__content .form__card {
+  margin-top: 40px;
+}
+.vision-widget__content .form__card-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.vision-widget__content .form .button-submit {
+  background: #4ea5f0;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  height: 54px;
+  cursor: pointer;
+  color: white;
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+  transition: 0.3s;
+}
+.vision-widget__content .form .button-submit:hover {
+  background: rgba(78, 165, 240, 0.8);
+}
+.vision-widget__content .text-field {
+  position: relative;
+}
+.vision-widget__content .text-field label {
+  display: block;
+  font-size: 14px;
+  color: #293041;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+}
+.vision-widget__content .text-field input {
+  border: 0.8px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  padding: 0 15px;
+  height: 48px;
+  outline: none;
+  margin: 6px 0;
+}
+.vision-widget__content .text-field input:focus {
+  border: 1px solid #293041;
+}
+.vision-widget__content .footer-component {
+  margin-top: 35px;
+}
+.vision-widget__content .footer-component__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.vision-widget__content .footer-component__icons img {
+  width: 15%;
+}
+.vision-widget__content .footer-component__text {
+  color: #C8C8CE;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+}
+.vision-widget__content .footer-component__text a {
+  color: #293041 !important;
+}
+
+@media (max-width: 767px) {
+  .vision-widget {
+    display: flex;
+    align-items: flex-end;
+  }
+  .vision-widget__modal {
+    width: 100%;
+    max-height: 85vh;
+    padding: 38px 28px 28px 28px;
+  }
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=index.css.map */
