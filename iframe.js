@@ -24,25 +24,28 @@ class ovIframe {
 
         this._initWidget();
 
-        fetch('https://my.onevision.kz/v1/iframe/payment', {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            },
-        })
-            .then(response => {
-                return response.json();
-            })
-            .then(responseData => {
+        this._createIframe(responseData.url);
+        this._listener(onSuccess, onFail);
 
-                this._createIframe(responseData.url);
+        // fetch('https://my.onevision.kz/v1/iframe/payment', {
+        //     method: 'POST',
+        //     body: JSON.stringify(data),
+        //     headers: {
+        //         'Content-type': 'application/json; charset=UTF-8',
+        //     },
+        // })
+        //     .then(response => {
+        //         return response.json();
+        //     })
+        //     .then(responseData => {
 
-                this._listener(onSuccess, onFail);
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
+        //         this._createIframe(responseData.url);
+
+        //         this._listener(onSuccess, onFail);
+        //     })
+        //     .catch((error) => {
+        //         console.error('Error:', error);
+        //     });
 
     }
 
