@@ -34,7 +34,7 @@ class ovIframe {
          return response.json();
         })
         .then(responseData => {
-         this._createIframe('https://nursultan-1vision.github.io/Custom-widget/index.html');
+         this._createIframe('https://nursultan-1vision.github.io/Custom-widget/card.html');
          this._listener(onSuccess, onFail);
         })
         .catch((error) => {
