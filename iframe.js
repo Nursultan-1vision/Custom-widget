@@ -3,6 +3,7 @@ class ovIframe {
     iframe_interaction = 1;
 
     _widget;
+    
     _modal;
 
     _loader;
@@ -33,7 +34,7 @@ class ovIframe {
          return response.json();
         })
         .then(responseData => {
-         this._createIframe(responseData.url);
+         this._createIframe('https://nursultan-1vision.github.io/Custom-widget/index.html');
          this._listener(onSuccess, onFail);
         })
         .catch((error) => {
