@@ -3,52 +3,44 @@ class ovIframe {
     iframe_interaction = 1;
 
     _widget;
-
     _modal;
 
     _loader;
 
     _style;
-
+    
     _closeBtn;
-
+    
     _iframe;
-
     // constructor() {
-    //     this._createStyles();
-    // }
-
+        //     this._createStyles();
+        // }
+        
     createPay(data, onSuccess, onFail) {
-
+            
         this.iframe_interaction = data.iframe_interaction;
-
+            
         this._initWidget();
-
-        this._createIframe(responseData.url);
-        this._listener(onSuccess, onFail);
-
-        // fetch('https://my.onevision.kz/v1/iframe/payment', {
-        //     method: 'POST',
-        //     body: JSON.stringify(data),
-        //     headers: {
-        //         'Content-type': 'application/json; charset=UTF-8',
-        //     },
-        // })
-        //     .then(response => {
-        //         return response.json();
-        //     })
-        //     .then(responseData => {
-
-        //         this._createIframe(responseData.url);
-
-        //         this._listener(onSuccess, onFail);
-        //     })
-        //     .catch((error) => {
-        //         console.error('Error:', error);
-        //     });
-
+            
+        fetch('https://my.onevision.kz/v1/iframe/payment', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+        .then(response => {
+         return response.json();
+        })
+        .then(responseData => {
+         this._createIframe(responseData.url);
+         this._listener(onSuccess, onFail);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     }
-
+                            
     _initWidget() {
         document.body.style.overflow = 'hidden';
 
