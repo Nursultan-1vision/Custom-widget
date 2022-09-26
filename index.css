@@ -5,7 +5,7 @@
   top: 0;
   bottom: 0;
   left: 0;
-  background-color: rgb(9 9 22 / 80%);
+  background-color: rgba(39, 39, 68, 0.8);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -31,6 +31,13 @@
 }
 .vision-widget__modal::-webkit-scrollbar {
   width: 0;
+}
+.vision-widget__modal iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: none;
 }
 .vision-widget__close {
   position: absolute;
